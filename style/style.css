@@ -1,0 +1,243 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: center center;  
+}
+
+/* Nav */
+/* #navbar {
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(118,0,0,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(118,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(118,0,0,1) 100%);
+}
+
+#navbar, #navbar ul {
+    list-style:none;
+    text-align:center;
+}
+
+#navbar li {
+    display:inline-block;
+    position:relative;
+}
+
+#navbar ul li {
+    display:inherit;
+    border-radius:0;
+}
+
+#navbar ul li:hover {
+    border-radius:0;
+}
+
+#navbar ul {
+    position:absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+}
+
+#navbar li:hover ul {
+    max-height:15em;
+}
+
+#navbar li{
+    background-color: #65537A;
+    background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
+    background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(118,0,0,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(118,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(118,0,0,1) 100%);
+    border: solid 1px white;
+}
+
+#navbar li li {
+    background:#760000;
+}
+
+#navbar li:hover, #navbar li li:hover {
+    background:#000000;
+}
+
+#navbar a{
+    text-decoration:none;
+    display:block;
+    padding:8px 32px;
+    color:#fff;
+    font-family:arial;
+}
+
+#navbar ul a{
+    padding:8px 0;
+}
+
+#navbar li:hover li a {
+    color:#fff;
+    text-transform:inherit;
+}
+
+#navbar li:hover a, #navbar li li:hover a {
+    color:#fff;
+} */
+
+#nav {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    z-index: 99;
+    position: relative;
+    background-color: #444444;
+}
+
+.navbar {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.navbar li {
+    height: auto;
+    width: 135.8px;
+    float: left;
+    text-align: center;
+    list-style: none;
+    font: normal bold 13px/1em Arial, Verdana, Helvetica;
+    padding: 0;
+    margin: 0;
+    /* background-color: #444444; */
+}
+
+.navbar a {
+    padding: 18px 0;
+    border-left: 1px solid #ccc9c9;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* .navbar li:hover,
+a:hover {
+  background-color: #444444;
+} */
+
+.navbar li ul {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li:hover ul {
+    display: block;
+}
+
+/* .navbar li ul li {
+    background-color: #444444;
+}
+
+.navbar li ul li a {
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    border-top: 1px solid #c9d4d8;
+    border-bottom: 1px solid #444444;
+}
+
+.navbar li ul li a:hover {
+    background-color: #a3a1a1;
+} */
+
+/* Container */
+.container {
+    max-width: 1200px; /* boite 1200px max centrée */
+    margin: 0 auto; /* centrage horizontal d'un display block */
+    /* width: 1200px; */
+}
+
+/* Page : Accueil */
+
+.h2-accueil {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Page : Musique */
+
+.music-title {
+    color: #FFFFFF;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.music-body {
+    background: rgb(215,215,215);
+    background: radial-gradient(circle, rgba(215,215,215,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.music-title {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-family: beaufort-pro, serif;
+    font-style: italic;
+}
+.music-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.music-card-item {
+    margin-bottom: 1rem;
+}
+
+.title-card-item {
+    background-color: #FFF;
+    text-decoration: underline;
+    text-align: center;
+    padding: 1rem 0 0.5rem 0;
+}
+
+
+/* Footer */
+.footer {  
+    width: 100%;  
+    position: fixed;
+    left: 0;
+    bottom: 0;   
+    color: white;
+    text-align: center;
+    background: rgb(57,59,57);
+    background: radial-gradient(circle, rgba(57,59,57,1) 0%, rgba(0,0,0,1) 100%);
+    padding: 1rem 0;
+}
+
+.footer a {
+    color: #FFFFFF;
+}
