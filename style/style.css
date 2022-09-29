@@ -1,7 +1,7 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     list-style: none;
 }
 
@@ -9,14 +9,15 @@ a {
     text-decoration: none;
 }
 
-html, body {
+html,
+body {
     min-height: 100%
 }
 
 /* Banner */
 .banner {
     width: 100%;
-    height: 40vh;
+    height: 70vh;
     object-fit: cover;
     object-position: center center;
 }
@@ -24,7 +25,7 @@ html, body {
 /* Nav */
 nav {
     display: flex;
-    margin-top: -0.24em; 
+    /* margin-top: -0.26em; */
     background-color: #343A3F;
     align-items: center;
     justify-content: space-between;
@@ -43,10 +44,11 @@ nav {
 }
 
 .navbar a {
-    color: white;;
+    color: white;
+    ;
 }
 
-.navbar > li {
+.navbar>li {
     float: left;
     color: white;
     width: 150px;
@@ -74,7 +76,7 @@ nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transform: scale(0);
     transform-origin: top center;
-    transition: all 300ms ease-in-out;   
+    transition: all 300ms ease-in-out;
 }
 
 .second-menu li:first-child {
@@ -85,19 +87,22 @@ nav {
     padding-bottom: 50px;
 }
 
-.navbar > li:hover .second-menu li {
+.navbar>li:hover .second-menu li {
     transform: scale(1);
 }
 
-.navbar > li:hover .second-menu {
+.navbar>li:hover .second-menu {
     transform: scale(1);
 }
 
 /* Container */
 .container {
-    max-width: 1200px; /* boite 1200px max centrée */
-    margin: 0 auto; /* centrage horizontal d'un display block */
+    max-width: 1200px;
+    /* boite 1200px max centrée */
+    margin: 0 auto;
+    /* centrage horizontal d'un display block */
     /* width: 1200px; */
+    min-height: 20vh;
 }
 
 /* Page : Accueil */
@@ -107,13 +112,21 @@ nav {
     text-align: center;
 }
 
+.video:hover {
+    filter: blur(2px);
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+
+
 /* Page : Musique */
 .music-body {
-    background: rgb(34,193,195);
-    background: -moz-linear-gradient(219deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    background: -webkit-linear-gradient(219deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    background: linear-gradient(219deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1);
+    background: rgb(34, 193, 195);
+    background: -moz-linear-gradient(219deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    background: -webkit-linear-gradient(219deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    background: linear-gradient(219deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3", endColorstr="#fdbb2d", GradientType=1);
 }
 
 .music-title {
@@ -131,6 +144,7 @@ nav {
     font-family: beaufort-pro, serif;
     font-style: italic;
 }
+
 .music-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -139,7 +153,6 @@ nav {
 }
 
 .music-card-item {
-
     margin-bottom: 1rem;
 }
 
@@ -151,16 +164,46 @@ nav {
     border-radius: 0.25em 0.25em 0 0;
 }
 
+/* Page : Cartes */
+.summoners-rift div{
+    display: flex;
+    flex-direction: column;
+}
+
+.summoners-rift div div {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 1200px;
+    text-align: left;
+}
+
+.summoners-rift h2 {
+    text-decoration: underline;
+    margin-top: 2rem;
+    font-weight: 700;
+    font-family: beaufort-pro, serif;
+    font-style: italic;
+    font-size: 2em;
+    text-shadow: black 0.1em 0.1em 0.5em;
+    text-align: left;
+}
+
+.summoners-rift img {
+    width: 100%;
+    height: auto;
+}
+
+
 /* Footer */
-.footer {  
-    width: 100%;  
+.footer {
+    width: 100%;
     /* position: fixed; */
     left: 0;
-    bottom: 0;   
+    bottom: 0;
     color: white;
     text-align: center;
-    background: rgb(57,59,57);
-    background: radial-gradient(circle, rgba(57,59,57,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(57, 59, 57);
+    background: radial-gradient(circle, rgba(57, 59, 57, 1) 0%, rgba(0, 0, 0, 1) 100%);
     padding: 1rem 0;
 }
 

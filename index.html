@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Musiques LOL </title>
     <link rel="stylesheet" href="https://use.typekit.net/bld7bay.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
-    <!-- Bannière -->
-    <img class="banner" src="img/banner.png" alt="Banner">   
-    <nav class="nav">
-        <ul id="navbar">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="#">Présentation</a>
-                <ul>
+
+<body class="music-body">
+    <header>
+        <a href="index.html">
+            <img class="banner" src="img/banner.png" alt="Banner">
+        </a>
+    </header>
+    <nav>
+        <a class="nav-svg-link" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="50px" height="100%">
+                <circle cx="24" cy="24" r="20" fill="#d32f2f" />
+                <polygon fill="#fff"
+                    points="25.891,13.176 12.584,19.462 14.642,28.935 17.356,28.935 16.887,22.159 17.304,22.03 18.936,28.935 21.756,28.935 21.652,20.681 22.068,20.552 23.495,28.935 26.481,28.935 27.185,18.965 27.601,18.835 28.34,28.935 32.288,28.935 33.678,15.07" />
+                <polygon fill="#fff" points="23.612,32.813 22.628,30.278 32.118,30.766 31.711,34.824" />
+            </svg>
+        </a>
+        <ul class="navbar">
+            <li>
+                <a href="#">Présentation</a>
+                <ul class="second-menu">
                     <li><a href="pres-jeu.html">Jeu</a></li>
-                    <li><a href="pres-map.html">Map</a></li>
+                    <li><a href="pres-map.html">Cartes</a></li>
                 </ul>
             </li>
-            <li><a href="champion.html">Champions</a></li>
-            <li><a href="musique.html">Musiques</a></li>
+            <li>
+                <a href="champion.html">Champions</a>
+            </li>
+            <li>
+                <a href="musique.html">Musiques</a>
+            </li>
         </ul>
     </nav>
-    <main>
-        <div class="container">
-            <h2 class="h2-accueil">Accueil</h2>
-        </div>
+    <main class="container">
+        <h2 class="music-title">HomePage</h2>
+        <!-- <video preload="metadata" style="object-fit:cover;object-position:center center" data-testid="hero:video" playsinline="" loop="" muted="" class="style__Video-fydk49-2 gCXmmQ" data-object-fit="cover" data-object-position="center center"><source src="video/hero-0632cbf2872c5cc0dffa93d2ae8a29e8.webm" type="video/webm"><source src="video/hero-de0ba45b1d0959277d12545fbb645722.mp4" type="video/mp4"></video> -->
+        <!-- <video src="video/hero-de0ba45b1d0959277d12545fbb645722.mp4" type="video/mp4"></video> -->
+        <a href="index.html">
+            <video width="100%" preload="metadata" autoplay muted loop class="video">
+                <source src="video/hero-0632cbf2872c5cc0dffa93d2ae8a29e8.webm" type="video/webm">
+                <source src="video/hero-de0ba45b1d0959277d12545fbb645722.mp4" type="video/mp4">
+            </video>
+        </a>
     </main>
     <footer class="footer">
         <a href="https://github.com/huguestouyon" target="_blank">Mon Github 🤩</a>
     </footer>
-
-
 </body>
+
 </html>
