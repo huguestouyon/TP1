@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <link rel="stylesheet" href="https://use.typekit.net/bld7bay.css">
-    <link rel="stylesheet" href="style/style.css">
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/bld7bay.css">
@@ -19,62 +16,79 @@
     <header>
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
     </header>
-    <nav class="m-5 navbar navbar-expand-lg navbar-dark">
-        <div class="mb-5 container-fluid">
-            <a href="#" class="navbar-brand">
-                <img src="/img/logo/riot-games-seeklogo.com.svg" height="28" alt="Logo">
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav m-auto">
-                    <a href="index.html" class="nav-item nav-link">Accueil</a>
-                    <div class="dropdown dropdown">
-                        <button class="nav-btn btn btn-dark dropdown-toggle" data-toggle="dropdown">Présentation</button>
-                        <div class="dropdown-menu dropdown-menu-dark">
-                            <a class="dropdown-item active" href="#">Jeu</a>
-                            <a class="dropdown-item" href="">La Faille</a>
-                        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand m-5" href="index.html"><img src="img/logo/riot-games-seeklogo.com.svg" height="28"
+                alt=""></a>
+        <button class="navbar-toggler me-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Présentation
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item active text-bg-light" href="#">Jeu</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-capitalize text-bg-dark" href="pres-map.html">La faille</a>
                     </div>
-                    <a href="champion.html" class="nav-item nav-link">Champions</a>
-                    <a href="musiques.html" class="nav-item nav-link">Musiques</a>
-                </div>
-            </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="champion.html">Champions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="musiques.html">Musiques</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <main class="mt-5">
+        <hr class="m-auto w-50 bg-dark border-2 border-top border-light">
         <section class="mt-5 mb-5">
             <h2 class="p-5 mx-auto h2">Choisissez votre champion</h2>
             <div class="card-group">
                 <div class="card text-bg-dark">
                     <img class="card-img-top" src="img/champs/Senna_9.jpg" alt="Champ1">
                     <div class="card-body">
-                        <h5 class="card-title">Nom</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut quam placeat corrupti iste sunt nobis. Accusamus architecto culpa ut necessitatibus ducimus quia illum? Natus, eos? Fugiat soluta praesentium illo?</p>
-                        <p class="card-text"><small class="text-muted">...</small></p>
+                        <h5 class="card-title text-center">Nom</h5>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet</p>
+                        <p class="card-text text-left"><small class="text-muted">...</small></p>
                     </div>
                 </div>
                 <div class="card text-bg-dark">
                     <img class="card-img-top" src="img/champs/Jax_12.jpg" alt="Champ1">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Nom</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut quam placeat corrupti iste sunt nobis. Accusamus architecto culpa ut necessitatibus ducimus quia illum? Natus, eos? Fugiat soluta praesentium illo?</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet</p>
                         <p class="card-text"><small class="text-muted">...</small></p>
                     </div>
                 </div>
                 <div class="card text-bg-dark">
                     <img class="card-img-top" src="img/champs/Kayle_33.jpg" alt="Champ1">
                     <div class="card-body">
-                        <h5 class="card-title">Nom</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut quam placeat corrupti iste sunt nobis. Accusamus architecto culpa ut necessitatibus ducimus quia illum? Natus, eos? Fugiat soluta praesentium illo?</p>
-                        <p class="card-text"><small class="text-muted">...</small></p>
+                        <h5 class="card-title text-center">Nom</h5>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet</p>
+                        <p class="card-text text-end"><small class="text-muted">...</small></p>
                     </div>
                 </div>
             </div>
         </section>
+        <hr class="m-auto w-50 bg-dark border-2 border-top border-light">
+        <section class="mt-5">
+            <h2 class="p-5 mx-auto h2">Jouer</h2>
+            <video class="mt-5 w-100 rounded-circle" autoplay loop muted>
+                <source src="video/ss2020_urgot_vi_cait_1920x1080.mp4" type="video/mp4">
+            </video>
+        </section>
     </main>
-    
+    <footer>
+        <div class="mt-5 mb-5 text-center border-top"></div>
+        <div class="text-center mb-3"><a class="link-light" href="https://github.com/huguestouyon">Github</a></div>
+    </footer>
 
 
     <!-- JavaScript Bundle with Popper -->
