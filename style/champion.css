@@ -113,18 +113,14 @@ main {
     margin: auto;
 }
 
-header {
-    padding: 1rem 2rem;
-    text-align: center;
-}
-
 .card {
     border: 1px solid #bac6d3;
     border-radius: 8px;
     padding: 1rem;
 }
+
 .carousel {
-    margin-top: 5vh;
+    margin-top: 20vh;
 }
 
 .carousel-items {
@@ -140,13 +136,24 @@ header {
     scroll-snap-align: start;
 }
 
+.card-title {
+    font-family: beaufort-pro, sans-serif;
+    text-decoration: underline;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.card-title:hover {
+    transform: scale(1.1);
+}
+
 ::-webkit-scrollbar-track {
-    background-color: #F5F5F5;
+    background-color: rgba(255,255,255,.1);;
 }
 
 ::-webkit-scrollbar {
-    height: 6px;
-    background-color: #F5F5F5;
+    height: 10px;
+    background-color: rgba(255,255,255,.1);;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -172,20 +179,29 @@ footer a {
 }
 
 /* Media Query */
-@media screen and (min-width: 401px) and (max-width: 900px) {
-    .navbar {
-        width: 25%;
+
+
+@media screen and (min-width: 420px) and (max-width: 655px) {
+    .navbar a {
+        padding: 1rem;
     }
 }
 
-@media screen and (min-width: 200px) and (max-width: 400px) {
-    .navbar {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 200px) {
-    .navbar {
+@media screen and (max-width: 419px) {
+    nav {
         width: 100%;
+    }
+    .navbar a {
+        padding: 10px 0;
+    }
+    .navbar li {
+        float: none;
+    }
+    li:hover .second-menu {
+        visibility: visible;
+        position: inherit;
+    }
+    .carousel {
+        margin-top: 50vh;
     }
 }
